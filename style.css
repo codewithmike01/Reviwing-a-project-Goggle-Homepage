@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+div,
+section {
+  display: block;
+}
+
+body {
+  font-size: 1rem;
+  font-family: arial, sans-serif;
+  color: #222;
+  padding: 0;
+  margin: 0;
+}
+
+.headGoogle {
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+  font-size: 2.3rem;
+  margin-top: 2.5em;
+}
+
+.googleimg {
+  /* aspect-ratio: auto 272px / 92px; */
+  height: 92px;
+  width: 272px;
+}
+
+/* .gcolor{
+    color: #4285F4;
+}
+
+.firsto{
+    color: #EA4335;
+}
+
+.secondo{
+    color: #FBBC06;
+}
+
+.lcolor {
+    color: #34A853;
+} */
+
+.userinfo li {
+  cursor: pointer;
+}
+
+.googlesearch {
+  width: 55%;
+  border: 1px solid #e8eaed;
+  border-radius: 2em;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  padding: 0.7em;
+  height: 2rem;
+}
+
+.googlesearch:hover {
+  box-shadow: 0 3px 8px 0 #e8eaed;
+}
+
+.search {
+  width: 100%;
+  height: 2.7em;
+  border: none;
+}
+
+div h3 a {
+  text-decoration: none;
+  color: #1a0dab;
+  padding: 0.5em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.belowlink a {
+  margin: 1em;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.userinfo ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.belowlink a:hover {
+  text-decoration: underline;
+}
+
+.userinfo ul li a:hover {
+  text-decoration: underline;
+}
+
+.ga {
+  color: white;
+}
+
+/* tooltip effect on Google apps */
+
+.toolTipText {
+  position: absolute;
+  top: 4em;
+  right: 2.6em;
+  color: white;
+  padding: 0.47em 0.7em;
+  border-radius: 5px;
+  background-color: rgba(39, 38, 38, 0.9);
+  font-size: 0.95em;
+  letter-spacing: 0.12em;
+  visibility: hidden;
+}
+
+.tooltipemail {
+  position: absolute;
+  top: 4em;
+  right: 1em;
+  line-height: 1.4em;
+  background-color: rgba(75, 73, 73, 0.7);
+  letter-spacing: 0.07em;
+  color: rgb(218, 214, 214);
+  padding: 0.5em 0.8em;
+  border-radius: 8px;
+  visibility: hidden;
+}
+
+.tooltipletter:hover .tooltipemail {
+  transition-delay: 0.7s;
+  visibility: visible;
+}
+
+.tooltip:hover .toolTipText {
+  transition-delay: 0.7s;
+  visibility: visible;
+}
+
+.userinfo ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.googleapp {
+  margin-top: 20%;
+  opacity: 0.4;
+  padding: 0.4em 0.3em 0.2em 0.3em;
+  border-radius: 50%;
+  z-index: -3;
+}
+
+.googleapp:hover {
+  background-color: rgb(227, 229, 233);
+  cursor: pointer;
+  z-index: 4;
+}
+
+.letterborder {
+  border: 1px solid #5d4037;
+  border-radius: 50%;
+  padding: 0.7em;
+  background-color: #5d4037;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.userinfo ul li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0.8em 1em;
+}
+
+/* clears the 'X' from Internet Explorer */
+
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the 'X' from Chrome */
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* To remove background color in search input */
+
+input[type="search"]:active,
+input[type="search"]:focus {
+  background-color: transparent;
+}
+
+/* Change the white to any color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.formalign {
+  margin-left: -25%;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.belowsearch {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+  font-size: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.belowsearch h2 {
+  margin: 0.7em;
+  background-color: #f8f9fa;
+  padding: 0.9em;
+  border: 1px solid #f8f9fa;
+}
+
+.belowsearch h2:hover {
+  box-shadow: 0 3px 8px 0 #e8eaed;
+  cursor: pointer;
+}
+
+.language {
+  font-size: 0.7rem;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 7em;
+}
+
+.lang {
+  margin-left: 0.3em;
+  color: #1a0dab;
+}
+
+img {
+  width: 15px;
+  height: 15px;
+}
+
+.imgsearch {
+  text-align: left;
+}
+
+.imgmic {
+  cursor: pointer;
+  text-align: right;
+}
+
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-top: 1em;
+}
+
+footer > h3 {
+  margin-left: 1.5em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  opacity: 0.3;
+}
+
+.footimg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footimg img {
+  align-self: center;
+  margin-right: 0.6em;
+}
+
+.footimg h3 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.belowlink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 1.5em;
+  padding-bottom: 0.3%;
+}
+
+.belowlink section:nth-child(2) {
+  margin-left: 1em;
+}
+
+/* Media query using a Desktop first approach */
+
+@media (max-width: 760) {
+  .googleimg {
+    height: 80px;
+    width: 224px;
+  }
+
+  .headGoogle {
+    font-size: 0.79rem;
+    margin-top: 7em;
+    margin-bottom: 1.7em;
+  }
+
+  .googlesearch {
+    height: 1.1em;
+  }
+
+  .search {
+    width: 100%;
+    height: 1em;
+    border: none;
+  }
+
+  .userinfo ul {
+    font-size: 0.76rem;
+  }
+
+  .letterborder {
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    font-size: 0.8rem;
+  }
+
+  .imgsearch,
+  .imgmic {
+    margin-top: 6%;
+  }
+
+  .belowsearch {
+    font-size: 0.43rem;
+  }
+
+  h3 {
+    font-size: 0.7rem;
+  }
+
+  .language h3 {
+    font-size: 0.6rem;
+  }
+
+  .belowlink {
+    font-size: 0.6rem;
+  }
+
+  footer {
+    padding-top: 0.4%;
+    padding-bottom: 0.2%;
+  }
+
+  .footimg img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .language {
+    margin-bottom: 28em;
+  }
+}
+
+@media (max-width: 610) {
+  .userinfo ul {
+    font-size: 0.6rem;
+  }
+
+  .googleimg {
+    height: 60px;
+    width: 190px;
+  }
+
+  .letterborder {
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .headGoogle {
+    font-size: 0.9rem;
+    margin-top: 5em;
+    margin-bottom: 1.7em;
+  }
+
+  .googlesearch {
+    height: 1.2em;
+  }
+
+  .search {
+    width: 100%;
+    height: 1.2em;
+    border: none;
+  }
+
+  .imgsearch,
+  .imgmic {
+    margin-top: 5%;
+  }
+
+  .belowsearch {
+    font-size: 0.45rem;
+  }
+
+  .belowlink {
+    font-size: 0.6rem;
+  }
+
+  footer {
+    padding-bottom: 0.5%;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  .footimg img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .language {
+    margin-bottom: 24em;
+  }
+}
+
+@media (max-width: 419px) {
+  input[type="search"] {
+    padding: 0.76em;
+  }
+
+  .googleimg {
+    height: 45px;
+    width: 140px;
+    margin-top: 10%;
+  }
+
+  .userinfo ul {
+    font-size: 0.4rem;
+    margin-right: 0.5em;
+  }
+
+  .letterborder {
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    font-size: 0.7rem;
+  }
+
+  .headGoogle {
+    font-size: 0.7rem;
+    margin-top: 5em;
+    margin-bottom: 1.7em;
+  }
+
+  .googlesearch {
+    height: 0.8em;
+  }
+
+  .search {
+    margin-left: 0.7em;
+    height: 1.2em;
+  }
+
+  .imgsearch,
+  .imgmic {
+    margin-top: 2%;
+  }
+
+  .imgsearch img,
+  .imgmic img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .belowsearch {
+    font-size: 0.39rem;
+  }
+
+  h3 {
+    font-size: 0.7rem;
+  }
+
+  .language h3 {
+    font-size: 0.5rem;
+  }
+
+  .belowlink {
+    font-size: 0.49rem;
+  }
+
+  footer {
+    padding-bottom: 0.5%;
+  }
+
+  .footimg img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .googleapp {
+    margin-top: -2%;
+  }
+
+  .language {
+    margin-bottom: 38em;
+  }
+}
+
+@media (max-width: 373px) {
+  .googleimg {
+    height: 30px;
+    width: 110px;
+    margin-top: 10%;
+    margin-bottom: -4%;
+  }
+
+  .belowlink {
+    font-size: 0.4rem;
+  }
+
+  h3 {
+    font-size: 0.6rem;
+  }
+
+  .footimg img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .language {
+    margin-bottom: 30em;
+    margin-top: -1%;
+  }
+
+  footer {
+    margin-top: 90%;
+    padding-bottom: 0.3%;
+  }
+
+  .googlesearch {
+    height: 0.5em;
+    width: 70%;
+  }
+
+  .search {
+    margin-left: 0.6em;
+    height: 1.2em;
+    padding-top: 0.4em;
+  }
+
+  .imgsearch,
+  .imgmic {
+    margin-top: -15%;
+  }
+}
+
+@media (max-width: 283px) {
+  .belowsearch {
+    font-size: 0.3rem;
+  }
+
+  .language {
+    margin-bottom: 90em;
+  }
+
+  footer {
+    margin-top: -55%;
+    padding-bottom: -0.9%;
+  }
+
+  .belowlink {
+    font-size: 0.3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .belowlink section {
+    margin-bottom: 0.8em;
+  }
+
+  h3 {
+    font-size: 0.5rem;
+  }
+}
